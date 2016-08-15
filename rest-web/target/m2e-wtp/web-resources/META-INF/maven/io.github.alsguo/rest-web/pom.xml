@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>io.github.alsguo</groupId>
+		<artifactId>rest-ssm</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	<artifactId>rest-web</artifactId>
+	<version>1.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<dependencies>
+		<dependency>
+			<groupId>io.github.alsguo</groupId>
+			<artifactId>rest-common</artifactId>
+			<version>${rest-common.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.alsguo</groupId>
+			<artifactId>rest-model</artifactId>
+			<version>${rest-model.version}</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>rest-web</finalName>
+	</build>
+</project>

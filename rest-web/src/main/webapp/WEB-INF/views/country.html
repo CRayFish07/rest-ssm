@@ -1,0 +1,18 @@
+<%layout("/common/layout.html",{title:"国家列表"}){ %>
+<h2>测试Mybatis分页插件</h2>
+<table class="table">
+	<tr>
+		<td>id</td>
+		<td>name</td>
+		<td>code</td>
+	</tr>
+	<%for(country in pageInfo.list){%>
+	<tr>
+		<td>${country.id}</td>
+		<td>${country.countryName}</td>
+		<td>${country.countryCode}</td>
+	</tr>
+	<%}%>
+</table>
+<%include("/common/pagination.html"){} %>
+<%}%>
